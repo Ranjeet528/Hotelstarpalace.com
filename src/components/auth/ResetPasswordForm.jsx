@@ -191,17 +191,9 @@ value={password}
 onChange={(e)=>setPassword(e.target.value)}
 
 rightIcon={
-
-showPassword
-
-?
-
-<EyeOff size={20}/>
-
-:
-
-<Eye size={20}/>
-
+  showPassword
+    ? EyeOff
+    : Eye
 }
 
 onRightIconClick={()=>setShowPassword(!showPassword)}
@@ -232,17 +224,9 @@ value={confirmPassword}
 onChange={(e)=>setConfirmPassword(e.target.value)}
 
 rightIcon={
-
-showConfirm
-
-?
-
-<EyeOff size={20}/>
-
-:
-
-<Eye size={20}/>
-
+  showPassword
+    ? EyeOff
+    : Eye
 }
 
 onRightIconClick={()=>setShowConfirm(!showConfirm)}
